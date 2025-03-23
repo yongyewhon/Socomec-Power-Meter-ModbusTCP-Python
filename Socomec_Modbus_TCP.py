@@ -39,35 +39,33 @@ SOCOMEC_PF2 = 50564 #PowerFactorPhase1 [+/-0.001]
 SOCOMEC_PF3 = 50566 #PowerFactorPhase1 [+/-0.001]
 
 SOCOMEC_LABEL = []
-SOCOMEC_LABEL.append(["PhaseToPhaseVoltageU12", "V"])
-SOCOMEC_LABEL.append(["PhaseToPhaseVoltageU23", "V"])
-SOCOMEC_LABEL.append(["PhaseToPhaseVoltageU31", "V"])
-SOCOMEC_LABEL.append(["PhaseToNeutralVoltagePhase1", "V"])
-SOCOMEC_LABEL.append(["PhaseToNeutralVoltagePhase2", "V"])
-SOCOMEC_LABEL.append(["PhaseToNeutralVoltagePhase3", "V"])
-SOCOMEC_LABEL.append(["Frequency", "Hz"])
-SOCOMEC_LABEL.append(["CurrentPhase1", "A"])
-SOCOMEC_LABEL.append(["CurrentPhase2", "A"])
-SOCOMEC_LABEL.append(["CurrentPhase3", "A"])
-SOCOMEC_LABEL.append(["NeutralCurrent", "A"])
-SOCOMEC_LABEL.append(["ActivePower", "kW"])
-SOCOMEC_LABEL.append(["ReactivePower", "kvar"])
-SOCOMEC_LABEL.append(["ApparentPower", "kVA"])
-SOCOMEC_LABEL.append(["PowerFactor", " "])
-SOCOMEC_LABEL.append(["ActivePowerPhase1", "kW"])
-SOCOMEC_LABEL.append(["ActivePowerPhase2", "kW"])
-SOCOMEC_LABEL.append(["ActivePowerPhase3", "kW"])
-SOCOMEC_LABEL.append(["ReactivePowerPhase1", "kvar"])
-SOCOMEC_LABEL.append(["ReactivePowerPhase2", "kvar"])
-SOCOMEC_LABEL.append(["ReactivePowerPhase3", "kvar"])
-SOCOMEC_LABEL.append(["ApparentPowerPhase1", "kVA"])
-SOCOMEC_LABEL.append(["ApparentPowerPhase2", "kVA"])
-SOCOMEC_LABEL.append(["ApparentPowerPhase3", "kVA"])
-SOCOMEC_LABEL.append(["PowerFactorPhase1", " "])
-SOCOMEC_LABEL.append(["PowerFactorPhase2", " "])
-SOCOMEC_LABEL.append(["PowerFactorPhase3", " "])
-SOCOMEC_UNIT = [0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.001, 0.001, 0.001, 0.001, 0.01, 0.01, 0.01, 0.001,
-                0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001]
+SOCOMEC_LABEL.append(["PhaseToPhaseVoltageU12", "V", 0.01])
+SOCOMEC_LABEL.append(["PhaseToPhaseVoltageU23", "V", 0.01])
+SOCOMEC_LABEL.append(["PhaseToPhaseVoltageU31", "V", 0.01])
+SOCOMEC_LABEL.append(["PhaseToNeutralVoltagePhase1", "V", 0.01])
+SOCOMEC_LABEL.append(["PhaseToNeutralVoltagePhase2", "V", 0.01])
+SOCOMEC_LABEL.append(["PhaseToNeutralVoltagePhase3", "V", 0.01])
+SOCOMEC_LABEL.append(["Frequency", "Hz", 0.01])
+SOCOMEC_LABEL.append(["CurrentPhase1", "A", 0.001])
+SOCOMEC_LABEL.append(["CurrentPhase2", "A", 0.001])
+SOCOMEC_LABEL.append(["CurrentPhase3", "A", 0.001])
+SOCOMEC_LABEL.append(["NeutralCurrent", "A", 0.001])
+SOCOMEC_LABEL.append(["ActivePower", "kW", 0.01])
+SOCOMEC_LABEL.append(["ReactivePower", "kvar", 0.01])
+SOCOMEC_LABEL.append(["ApparentPower", "kVA", 0.01])
+SOCOMEC_LABEL.append(["PowerFactor", " ", 0.001])
+SOCOMEC_LABEL.append(["ActivePowerPhase1", "kW", 0.01])
+SOCOMEC_LABEL.append(["ActivePowerPhase2", "kW", 0.01])
+SOCOMEC_LABEL.append(["ActivePowerPhase3", "kW", 0.01])
+SOCOMEC_LABEL.append(["ReactivePowerPhase1", "kvar", 0.01])
+SOCOMEC_LABEL.append(["ReactivePowerPhase2", "kvar", 0.01])
+SOCOMEC_LABEL.append(["ReactivePowerPhase3", "kvar", 0.01])
+SOCOMEC_LABEL.append(["ApparentPowerPhase1", "kVA", 0.01])
+SOCOMEC_LABEL.append(["ApparentPowerPhase2", "kVA", 0.01])
+SOCOMEC_LABEL.append(["ApparentPowerPhase3", "kVA", 0.01])
+SOCOMEC_LABEL.append(["PowerFactorPhase1", " ", 0.001])
+SOCOMEC_LABEL.append(["PowerFactorPhase2", " ", 0.001])
+SOCOMEC_LABEL.append(["PowerFactorPhase3", " ", 0.001])
 ########################################
 
 # ########################################
@@ -101,42 +99,40 @@ SOCOMEC_UNIT = [0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.001, 0.001, 0.001, 0
 # SOCOMEC_PF3 = 820 #PowerFactorPhase3 [+/-0.001]
 
 # SOCOMEC_LABEL = []
-# SOCOMEC_LABEL.append(["CurrentPhase1", "A"])
-# SOCOMEC_LABEL.append(["CurrentPhase2", "A"])
-# SOCOMEC_LABEL.append(["CurrentPhase3", "A"])
-# SOCOMEC_LABEL.append(["NeutralCurrent", "A"])
-# SOCOMEC_LABEL.append(["PhaseToPhaseVoltageU12", "V"])
-# SOCOMEC_LABEL.append(["PhaseToPhaseVoltageU23", "V"])
-# SOCOMEC_LABEL.append(["PhaseToPhaseVoltageU31", "V"])
-# SOCOMEC_LABEL.append(["PhaseToNeutralVoltagePhase1", "V"])
-# SOCOMEC_LABEL.append(["PhaseToNeutralVoltagePhase2", "V"])
-# SOCOMEC_LABEL.append(["PhaseToNeutralVoltagePhase3", "V"])
-# SOCOMEC_LABEL.append(["Frequency", "Hz"])
-# SOCOMEC_LABEL.append(["ActivePower", "kW"])
-# SOCOMEC_LABEL.append(["ReactivePower", "kvar"])
-# SOCOMEC_LABEL.append(["ApparentPower", "kVA"])
-# SOCOMEC_LABEL.append(["PowerFactor", " "])
-# SOCOMEC_LABEL.append(["ActivePowerPhase1", "kW"])
-# SOCOMEC_LABEL.append(["ActivePowerPhase2", "kW"])
-# SOCOMEC_LABEL.append(["ActivePowerPhase3", "kW"])
-# SOCOMEC_LABEL.append(["ReactivePowerPhase1", "kvar"])
-# SOCOMEC_LABEL.append(["ReactivePowerPhase2", "kvar"])
-# SOCOMEC_LABEL.append(["ReactivePowerPhase3", "kvar"])
-# SOCOMEC_LABEL.append(["ApparentPowerPhase1", "kVA"])
-# SOCOMEC_LABEL.append(["ApparentPowerPhase2", "kVA"])
-# SOCOMEC_LABEL.append(["ApparentPowerPhase3", "kVA"])
-# SOCOMEC_LABEL.append(["PowerFactorPhase1", " "])
-# SOCOMEC_LABEL.append(["PowerFactorPhase2", " "])
-# SOCOMEC_LABEL.append(["PowerFactorPhase3", " "])
-# SOCOMEC_UNIT = [0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.001, 0.001, 0.001, 0.001, 0.01, 0.01, 0.01, 0.001,
-#                 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001, 0.001]
+# SOCOMEC_LABEL.append(["PhaseToPhaseVoltageU12", "V", 0.01])
+# SOCOMEC_LABEL.append(["PhaseToPhaseVoltageU23", "V", 0.01])
+# SOCOMEC_LABEL.append(["PhaseToPhaseVoltageU31", "V", 0.01])
+# SOCOMEC_LABEL.append(["PhaseToNeutralVoltagePhase1", "V", 0.01])
+# SOCOMEC_LABEL.append(["PhaseToNeutralVoltagePhase2", "V", 0.01])
+# SOCOMEC_LABEL.append(["PhaseToNeutralVoltagePhase3", "V", 0.01])
+# SOCOMEC_LABEL.append(["Frequency", "Hz", 0.01])
+# SOCOMEC_LABEL.append(["CurrentPhase1", "A", 0.001])
+# SOCOMEC_LABEL.append(["CurrentPhase2", "A", 0.001])
+# SOCOMEC_LABEL.append(["CurrentPhase3", "A", 0.001])
+# SOCOMEC_LABEL.append(["NeutralCurrent", "A", 0.001])
+# SOCOMEC_LABEL.append(["ActivePower", "kW", 0.01])
+# SOCOMEC_LABEL.append(["ReactivePower", "kvar", 0.01])
+# SOCOMEC_LABEL.append(["ApparentPower", "kVA", 0.01])
+# SOCOMEC_LABEL.append(["PowerFactor", " ", 0.001])
+# SOCOMEC_LABEL.append(["ActivePowerPhase1", "kW", 0.01])
+# SOCOMEC_LABEL.append(["ActivePowerPhase2", "kW", 0.01])
+# SOCOMEC_LABEL.append(["ActivePowerPhase3", "kW", 0.01])
+# SOCOMEC_LABEL.append(["ReactivePowerPhase1", "kvar", 0.01])
+# SOCOMEC_LABEL.append(["ReactivePowerPhase2", "kvar", 0.01])
+# SOCOMEC_LABEL.append(["ReactivePowerPhase3", "kvar", 0.01])
+# SOCOMEC_LABEL.append(["ApparentPowerPhase1", "kVA", 0.01])
+# SOCOMEC_LABEL.append(["ApparentPowerPhase2", "kVA", 0.01])
+# SOCOMEC_LABEL.append(["ApparentPowerPhase3", "kVA", 0.01])
+# SOCOMEC_LABEL.append(["PowerFactorPhase1", " ", 0.001])
+# SOCOMEC_LABEL.append(["PowerFactorPhase2", " ", 0.001])
+# SOCOMEC_LABEL.append(["PowerFactorPhase3", " ", 0.001])
 # ####################################
 
 def Modbus_Socomec(Modbus_IP, Modbus_ID):
     valid = True
     reading = []
     try:
-        size = len(SOCOMEC_UNIT) * 2 #30
+        size = len(SOCOMEC_LABEL) * 2 #30
         PM_X = ModbusClient(host=Modbus_IP, port=Modbus_TCP_Port, unit_id=Modbus_ID, timeout=30.0, debug=Modbus_TCP_Debug, auto_open=True, auto_close=True)
         regs_list = PM_X.read_holding_registers(SOCOMEC_U12, size)
         if str(type(regs_list)) == "<class 'NoneType'>":
@@ -149,10 +145,10 @@ def Modbus_Socomec(Modbus_IP, Modbus_ID):
                 count_register += 1
                 if count_register == 2:
                     value = utils.get_2comp((regs_list[count-1] << 16) + regs_list[count], val_size=32)
-                    if SOCOMEC_UNIT[count_unit] == 0.1: decimal_point = 1
-                    elif SOCOMEC_UNIT[count_unit] == 0.01: decimal_point = 2
-                    elif SOCOMEC_UNIT[count_unit] == 0.001: decimal_point = 3
-                    reading.append(round(value * SOCOMEC_UNIT[count_unit], decimal_point))
+                    if SOCOMEC_LABEL[count_unit][2] == 0.1: decimal_point = 1
+                    elif SOCOMEC_LABEL[count_unit][2] == 0.01: decimal_point = 2
+                    elif SOCOMEC_LABEL[count_unit][2] == 0.001: decimal_point = 3
+                    reading.append(round(value * SOCOMEC_LABEL[count_unit][2], decimal_point))
                     count_register = 0
                     count_unit += 1
         else:
