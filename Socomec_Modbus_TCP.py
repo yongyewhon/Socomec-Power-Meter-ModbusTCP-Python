@@ -140,17 +140,14 @@ def Modbus_Socomec(Modbus_IP, Modbus_ID):
             print("Error read from modbus Socomec")
         elif len(regs_list) == size:
             print("Received")
-            count_register, count_unit = 0, 0
-            for count, regs in enumerate(regs_list):
-                count_register += 1
-                if count_register == 2:
-                    value = utils.get_2comp((regs_list[count-1] << 16) + regs_list[count], val_size=32)
-                    if SOCOMEC_LABEL[count_unit][2] == 0.1: decimal_point = 1
-                    elif SOCOMEC_LABEL[count_unit][2] == 0.01: decimal_point = 2
-                    elif SOCOMEC_LABEL[count_unit][2] == 0.001: decimal_point = 3
-                    reading.append(round(value * SOCOMEC_LABEL[count_unit][2], decimal_point))
-                    count_register = 0
-                    count_unit += 1
+            new_list = [(regs_list[i] << 16) + regs_list[i+1] for i in range(0, len(regs_list), 2)]
+            value_list = utils.get_list_2comp(new_list, val_size=32)
+            for count, value in enumerate(value_list):
+                if SOCOMEC_LABEL[count][2] == 0.1: decimal_point = 1
+                elif SOCOMEC_LABEL[count][2] == 0.01: decimal_point = 2
+                elif SOCOMEC_LABEL[count][2] == 0.001: decimal_point = 3
+                else: decimal_point = 0
+                reading.append(round(value * SOCOMEC_LABEL[count][2], decimal_point))
         else:
             valid = False
             print("Invalid")
@@ -167,3 +164,4 @@ while (True):
             print(label[0], read, label[1])
         print("===================================")
     time.sleep(2)
+
