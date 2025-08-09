@@ -99,6 +99,10 @@ SOCOMEC_LABEL.append(["PowerFactorPhase3", " ", 0.001])
 # SOCOMEC_PF3 = 820 #PowerFactorPhase3 [+/-0.001]
 
 # SOCOMEC_LABEL = []
+# SOCOMEC_LABEL.append(["CurrentPhase1", "A", 0.001])
+# SOCOMEC_LABEL.append(["CurrentPhase2", "A", 0.001])
+# SOCOMEC_LABEL.append(["CurrentPhase3", "A", 0.001])
+# SOCOMEC_LABEL.append(["NeutralCurrent", "A", 0.001])
 # SOCOMEC_LABEL.append(["PhaseToPhaseVoltageU12", "V", 0.01])
 # SOCOMEC_LABEL.append(["PhaseToPhaseVoltageU23", "V", 0.01])
 # SOCOMEC_LABEL.append(["PhaseToPhaseVoltageU31", "V", 0.01])
@@ -106,10 +110,6 @@ SOCOMEC_LABEL.append(["PowerFactorPhase3", " ", 0.001])
 # SOCOMEC_LABEL.append(["PhaseToNeutralVoltagePhase2", "V", 0.01])
 # SOCOMEC_LABEL.append(["PhaseToNeutralVoltagePhase3", "V", 0.01])
 # SOCOMEC_LABEL.append(["Frequency", "Hz", 0.01])
-# SOCOMEC_LABEL.append(["CurrentPhase1", "A", 0.001])
-# SOCOMEC_LABEL.append(["CurrentPhase2", "A", 0.001])
-# SOCOMEC_LABEL.append(["CurrentPhase3", "A", 0.001])
-# SOCOMEC_LABEL.append(["NeutralCurrent", "A", 0.001])
 # SOCOMEC_LABEL.append(["ActivePower", "kW", 0.01])
 # SOCOMEC_LABEL.append(["ReactivePower", "kvar", 0.01])
 # SOCOMEC_LABEL.append(["ApparentPower", "kVA", 0.01])
@@ -164,4 +164,5 @@ while (True):
             print(label[0], read, label[1])
         print("===================================")
     time.sleep(2)
+
 
